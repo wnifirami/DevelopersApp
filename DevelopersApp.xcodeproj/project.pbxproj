@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA85B80726B1DC4600445105 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85B80626B1DC4600445105 /* CardView.swift */; };
+		EA85B80926B1E49800445105 /* CardModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85B80826B1E49800445105 /* CardModel.swift */; };
+		EA85B80B26B1E53100445105 /* CardData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85B80A26B1E53100445105 /* CardData.swift */; };
+		EA85B81126B1E87B00445105 /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85B81026B1E87B00445105 /* PlaySound.swift */; };
+		EA85B81D26B1EDB300445105 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85B81C26B1EDB300445105 /* Constants.swift */; };
+		EA85B82326B1F1E000445105 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA85B82226B1F1E000445105 /* CustomButton.swift */; };
+		EA85B82426B1F23700445105 /* sound-chime.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = EA85B81926B1ED7D00445105 /* sound-chime.mp3 */; };
 		EAFD881526B1D7B4003ED953 /* DevelopersAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD881426B1D7B4003ED953 /* DevelopersAppApp.swift */; };
 		EAFD881726B1D7B4003ED953 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFD881626B1D7B4003ED953 /* ContentView.swift */; };
 		EAFD881926B1D7B6003ED953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFD881826B1D7B6003ED953 /* Assets.xcassets */; };
@@ -14,6 +21,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EA85B80626B1DC4600445105 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		EA85B80826B1E49800445105 /* CardModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardModel.swift; sourceTree = "<group>"; };
+		EA85B80A26B1E53100445105 /* CardData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardData.swift; sourceTree = "<group>"; };
+		EA85B81026B1E87B00445105 /* PlaySound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
+		EA85B81926B1ED7D00445105 /* sound-chime.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "sound-chime.mp3"; sourceTree = "<group>"; };
+		EA85B81C26B1EDB300445105 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA85B82226B1F1E000445105 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		EAFD881126B1D7B4003ED953 /* DevelopersApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevelopersApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFD881426B1D7B4003ED953 /* DevelopersAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DevelopersAppApp.swift; sourceTree = "<group>"; };
 		EAFD881626B1D7B4003ED953 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -33,6 +47,84 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA85B81226B1ED3000445105 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD881A26B1D7B6003ED953 /* Preview Content */,
+				EAFD881426B1D7B4003ED953 /* DevelopersAppApp.swift */,
+				EAFD881626B1D7B4003ED953 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		EA85B81326B1ED4300445105 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA85B80626B1DC4600445105 /* CardView.swift */,
+				EA85B82226B1F1E000445105 /* CustomButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA85B81426B1ED5200445105 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA85B80826B1E49800445105 /* CardModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA85B81526B1ED5C00445105 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				EA85B80A26B1E53100445105 /* CardData.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		EA85B81626B1ED6600445105 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				EA85B81A26B1ED8D00445105 /* Utils */,
+				EA85B81826B1ED7700445105 /* Sound */,
+				EA85B81726B1ED6C00445105 /* Images */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		EA85B81726B1ED6C00445105 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EAFD881826B1D7B6003ED953 /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		EA85B81826B1ED7700445105 /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				EA85B81926B1ED7D00445105 /* sound-chime.mp3 */,
+			);
+			path = Sound;
+			sourceTree = "<group>";
+		};
+		EA85B81A26B1ED8D00445105 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA85B81B26B1ED9300445105 /* Player */,
+				EA85B81C26B1EDB300445105 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EA85B81B26B1ED9300445105 /* Player */ = {
+			isa = PBXGroup;
+			children = (
+				EA85B81026B1E87B00445105 /* PlaySound.swift */,
+			);
+			path = Player;
+			sourceTree = "<group>";
+		};
 		EAFD880826B1D7B4003ED953 = {
 			isa = PBXGroup;
 			children = (
@@ -52,11 +144,12 @@
 		EAFD881326B1D7B4003ED953 /* DevelopersApp */ = {
 			isa = PBXGroup;
 			children = (
-				EAFD881426B1D7B4003ED953 /* DevelopersAppApp.swift */,
-				EAFD881626B1D7B4003ED953 /* ContentView.swift */,
-				EAFD881826B1D7B6003ED953 /* Assets.xcassets */,
+				EA85B81626B1ED6600445105 /* Ressources */,
+				EA85B81526B1ED5C00445105 /* Data */,
+				EA85B81426B1ED5200445105 /* Model */,
+				EA85B81326B1ED4300445105 /* View */,
+				EA85B81226B1ED3000445105 /* App */,
 				EAFD881D26B1D7B6003ED953 /* Info.plist */,
-				EAFD881A26B1D7B6003ED953 /* Preview Content */,
 			);
 			path = DevelopersApp;
 			sourceTree = "<group>";
@@ -126,6 +219,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA85B82426B1F23700445105 /* sound-chime.mp3 in Resources */,
 				EAFD881C26B1D7B6003ED953 /* Preview Assets.xcassets in Resources */,
 				EAFD881926B1D7B6003ED953 /* Assets.xcassets in Resources */,
 			);
@@ -138,7 +232,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA85B80B26B1E53100445105 /* CardData.swift in Sources */,
+				EA85B81126B1E87B00445105 /* PlaySound.swift in Sources */,
 				EAFD881726B1D7B4003ED953 /* ContentView.swift in Sources */,
+				EA85B80926B1E49800445105 /* CardModel.swift in Sources */,
+				EA85B82326B1F1E000445105 /* CustomButton.swift in Sources */,
+				EA85B81D26B1EDB300445105 /* Constants.swift in Sources */,
+				EA85B80726B1DC4600445105 /* CardView.swift in Sources */,
 				EAFD881526B1D7B4003ED953 /* DevelopersAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +368,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"DevelopersApp/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = P3MY8KZZK3;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = DevelopersApp/Info.plist;
